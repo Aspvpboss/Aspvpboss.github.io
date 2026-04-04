@@ -1,0 +1,155 @@
+/* ===== Body & Base ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e; /* dark background for contrast */
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ===== Container ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===== Headings ===== */
+h1 {
+    font-size: 3rem;
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #ffffff;
+    margin: 40px 0 20px;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #f0f0f0;
+}
+
+h5 {
+    color: #666;
+    margin: 5px 0 15px;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* ===== Links & Buttons ===== */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #00bfff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #0099cc;
+    transform: translateY(-3px);
+}
+
+/* ===== Projects Grid ===== */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+/* ===== Project Cards ===== */
+.project {
+    background: #2a2a2a;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
+
+/* ===== Responsive Typography ===== */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.6rem; }
+}
+
+
+/* ===== Download Button ===== */
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 12px 25px;
+    background-color: #00bfff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,191,255,0.2);
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0099cc;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,191,255,0.35);
+}
+
+.contact {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+
+/* ===== Copy Button ===== */
+.copy-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #00bfff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+.copy-btn:hover {
+    background-color: #0099cc;
+    transform: translateY(-3px);
+}
+
+/* ===== Copy status text ===== */
+#copy-status {
+    margin-left: 10px;
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+
