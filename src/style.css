@@ -155,6 +155,17 @@ a:hover {
     transition: border-color var(--transition), background var(--transition);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project p {
+    margin-bottom: 16px;
+}
+
+.project a {
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 .project::before {
@@ -184,41 +195,27 @@ a:hover {
     align-items: center;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 8px;
+    margin-top: 16px;
 }
 
-.contact a,
-.contact button {
+.contact a {
     margin-top: 0;
 }
 
-/* ===== Buttons (match anchor style exactly) ===== */
-button {
-    display: inline-block;
-    padding: 9px 22px;
+.inline-link {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: inherit;
+    letter-spacing: normal;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.inline-link:hover {
     background: transparent;
-    color: var(--accent);
-    border: 1px solid var(--accent);
-    border-radius: var(--radius);
-    font-family: var(--mono);
-    font-size: 0.75rem;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    transition: background var(--transition), box-shadow var(--transition);
-}
-
-button:hover {
-    background: var(--accent-glow);
-    box-shadow: 0 0 16px var(--accent-glow);
-}
-
-/* ===== Copy status ===== */
-#copy-status {
-    font-family: var(--mono);
-    font-size: 0.75rem;
-    color: var(--accent);
-    letter-spacing: 0.06em;
+    box-shadow: none;
 }
 
 /* ===== Download button ===== */
